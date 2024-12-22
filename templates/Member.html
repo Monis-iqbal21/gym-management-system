@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='membership.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo_div">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" class="logo">
+        </div>
+        <div class="nav_link_div">
+            <a href="{{ url_for('index') }}" class="nav_links">Home</a>
+            <a href="{{ url_for('about') }}" class="nav_links">About Us</a>
+            <a href="{{ url_for('member') }}" class="nav_links">Membership</a>
+        </div>
+    </header>
+
+
+    <!--            membership page   -->
+
+    <div class="membership_container">
+        <div class="membership_div">
+            <img src="{{url_for('static', filename='images/dumbell.jpg')}}" alt="pic" class="member_pic">
+            <div class="member_detail_div">
+                <h3 class="member_plan">Basic Plan</h3>
+
+                <p class="plan_detail">Access to gym, Free fitness assessment, cardio and strength training</p>
+                <p class="price">$30/m</p>
+            </div>
+        </div>
+        <div class="membership_div">
+            <img src="{{url_for('static', filename='images/pro2.jpg')}}" alt="pic" class="member_pic">
+            <div class="member_detail_div">
+                <h3 class="member_plan">Pro Plan</h3>
+
+                <p class="plan_detail">Full access to gym, Free fitness assessment and personalized workout plan,
+                    Two group fitness classes</p>
+                <p class="price">$50/m</p>
+            </div>
+        </div>
+
+
+        <div class="membership_div">
+            <img src="{{url_for('static', filename='images/elite.jpg')}}" alt="pic" class="member_pic">
+            <div class="member_detail_div">
+                <h3 class="member_plan">Elite Plan</h3>
+
+                <p class="plan_detail">Unlimited access to gym, Comprehensive fitness assessment with a personalized
+                    nutrition plan, Two free personal training and fitness classes</p>
+                <p class="price">$80/m</p>
+            </div>
+        </div>
+
+
+        <div class="membership_div">
+            <img src="{{url_for('static', filename='images/ultimate2.jpg')}}" alt="pic" class="member_pic">
+            <div class="member_detail_div">
+                <h3 class="member_plan">Ultimate Plan</h3>
+
+                <p class="plan_detail">24/7 access to all gym facilities, access to VIP zones and premium equipment,
+                    Tailored workout and nutrition plans</p>
+                <p class="price">$120/m</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--            member ship page   -->
+
+    <footer class="footer">
+        <div><img src="{{url_for('static', filename='images/logo.png')}}" alt="" style="width: 200px;"></div>
+
+        <div class="footer_link_div">
+            <a href="{{ url_for('index') }}" class="nav_links">Home</a>
+            <a href="{{ url_for('about') }}" class="nav_links">About Us</a>
+            <a href="{{ url_for('member') }}" class="nav_links">Membership</a>
+
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

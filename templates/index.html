@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='index.css') }}"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo_div">
+        <img
+          src="{{ url_for('static', filename='images/logo.png') }}"
+          alt="logo"
+          class="logo"
+        />
+      </div>
+      <div class="nav_link_div">
+        <a href="{{ url_for('index') }}" class="nav_links">Home</a>
+        <a href="{{ url_for('about') }}" class="nav_links">About Us</a>
+        <a href="{{ url_for('member') }}" class="nav_links">Membership</a>
+      </div>
+    </header>
+
+    <div class="hero_div">
+      <video autoplay muted loop class="hero_video">
+        <source src="../static/images/video/gym2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero_content">
+        <h1 class="banner_heading">
+          Unleash Your Strength, Transform Your Life
+        </h1>
+        <p class="banner_sub_heading">
+          Join us to build a healthier & stronger you. Your journey starts here.
+        </p>
+      </div>
+    </div>
+
+    <!--                  card section                   -->
+
+    <div class="card_container">
+      <div class="card_div_1">
+        <div class="card_img_div">
+          <img
+            src="{{ url_for('static', filename='images/boxing2.jpg') }}"
+            alt=""
+            class="card_img"
+          />
+        </div>
+        <div class="card_detail">
+          <h3 class="card_detail_heading">
+            "Boxing"<br /><span style="font-size: 20px"
+              >Punch Your Way to Fitness</span
+            >
+          </h3>
+          <p class="card_detail_text">
+            Whether you're a beginner just starting your fitness journey or a
+            seasoned pro looking to take your skills to the next level, our
+            boxing bags are designed to push you to new heights. Feel the rush
+            of adrenaline as you unleash your power with every punch. Our
+            equipment provides the perfect balance of resistance and support,
+            ensuring an effective workout for all fitness levels. Perfect for
+            enhancing cardiovascular health, toning muscles, and releasing
+            stress after a long day, boxing is not just a workout—it's a
+            lifestyle.
+          </p>
+        </div>
+      </div>
+
+      <div class="card_div_2">
+        <div class="card_detail">
+          <h3 class="card_detail_heading">
+            "Weight Training"<br /><span style="font-size: 20px"
+              >Build Strength</span
+            >
+          </h3>
+          <p class="card_detail_text">
+            Weight training is essential for building strength, toning muscles,
+            and increasing metabolism. It’s not just for bodybuilders—it’s for
+            anyone looking to transform their body and become stronger, inside
+            and out. Whether you're lifting for muscle gain, toning, or
+            improving bone density, weight training provides incredible benefits
+            for all fitness levels. Our gym is equipped with top-of-the-line
+            free weights, machines, and accessories, and our expert trainers are
+            here to guide you through the perfect routine tailored to your
+            goals. Push your limits, challenge your body, and build the strength
+            that will last a lifetime.
+          </p>
+        </div>
+        <div class="card_img_div">
+          <img
+            src="{{ url_for('static', filename='images/dumbell.jpg') }}"
+            alt=""
+            class="card_img"
+          />
+        </div>
+      </div>
+
+      <div class="card_div_1">
+        <div class="card_img_div">
+          <img
+            src="{{ url_for('static', filename='images/weightloss.jpg') }}"
+            alt=""
+            class="card_img"
+          />
+        </div>
+        <div class="card_detail">
+          <h3 class="card_detail_heading">
+            "Weight loss"<br /><span style="font-size: 20px"
+              >Transform Your Body</span
+            >
+          </h3>
+          <p class="card_detail_text">
+            Achieving your weight loss goals is not just about shedding
+            pounds—it's about improving your overall health and boosting your
+            confidence. With the right combination of exercise, nutrition, and
+            dedication, weight loss becomes a journey that enhances your energy,
+            well-being, and mindset. Our gym offers a variety of programs
+            tailored to help you burn fat, build lean muscle, and stay motivated
+            every step of the way. Whether you're looking for high-intensity
+            workouts, personalized fitness plans, or expert guidance, we provide
+            all the tools you need to reach your goals and maintain lasting
+            results.
+          </p>
+        </div>
+      </div>
+
+      <div class="card_div_2">
+        <div class="card_detail">
+          <h3 class="card_detail_heading">
+            "Cardio"<br /><span style="font-size: 20px">Boost your life.</span>
+          </h3>
+          <p class="card_detail_text">
+            Cardiovascular fitness is the foundation of a healthy lifestyle.
+            Regular cardio exercises not only strengthen your heart but also
+            enhance endurance, burn fat, and improve overall energy levels. From
+            running on the treadmill to cycling and swimming, our gym offers a
+            wide range of cardio options to get your heart pumping. Whether
+            you're a beginner looking to improve stamina or an athlete aiming
+            for peak performance, our cardio workouts will keep you motivated,
+            challenged, and on track to achieve your fitness goals. Get ready to
+            feel the burn and experience a healthier, more energized you.
+          </p>
+        </div>
+        <div class="card_img_div">
+          <img
+            src="{{ url_for('static', filename='images/cardio.jpg') }}"
+            alt=""
+            class="card_img"
+          />
+        </div>
+      </div>
+
+      <div class="multi_card_container">
+        <div class="multi_card_pic m-c-p-1"></div>
+        <div class="multi_card_pic m-c-p-2"></div>
+        <div class="multi_card_pic m-c-p-3"></div>
+        <div class="multi_card_pic m-c-p-4"></div>
+        <div class="multi_card_pic m-c-p-5"></div>
+        <div class="multi_card_pic m-c-p-6"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>
+        <img
+          src="{{url_for('static', filename='images/logo.png')}}"
+          alt=""
+          style="width: 200px"
+        />
+      </div>
+
+      <div class="footer_link_div">
+        <a href="{{ url_for('index') }}" class="nav_links">Home</a>
+        <a href="{{ url_for('about') }}" class="nav_links">About Us</a>
+        <a href="{{ url_for('member') }}" class="nav_links">Membership</a>
+      </div>
+    </footer>
+  </body>
+</html>

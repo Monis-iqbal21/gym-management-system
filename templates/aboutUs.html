@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='aboutus.css') }}">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo_div">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" class="logo">
+        </div>
+        <div class="nav_link_div">
+            <a href="{{ url_for('index') }}" class="nav_links">Home</a>
+            <a href="{{ url_for('about') }}" class="nav_links">About Us</a>
+            <a href="{{ url_for('member') }}" class="nav_links">Membership</a>
+        </div>
+    </header>
+
+    <div class="aboutus_container">
+        <h1 class="aboutus-heading">About Us</h1>
+        <div class="aboutus_detail">
+            <p>Welcome to TITSN GYM, your ultimate destination for fitness and wellness. We are committed to
+                helping you achieve your health goals with our state-of-the-art equipment, expert trainers, and diverse
+                workout classes, including yoga, HIIT, Zumba, and strength training. Our gym fosters a supportive and
+                inspiring environment where everyone, from beginners to fitness enthusiasts, can thrive. With flexible
+                membership plans tailored to your lifestyle—whether monthly, annual, or pay-as-you-go—we make fitness
+                accessible and enjoyable. Join us today and take the first step toward building a healthier, stronger,
+                and happier you.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div><img src="{{url_for('static', filename='images/logo.png')}}" alt="" style="width: 200px;"></div>
+
+        <div class="footer_link_div">
+            <a href="{{ url_for('index') }}" class="nav_links">Home</a>
+            <a href="{{ url_for('about') }}" class="nav_links">About Us</a>
+            <a href="{{ url_for('member') }}" class="nav_links">Membership</a>
+
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
